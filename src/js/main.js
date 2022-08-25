@@ -1,6 +1,21 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 
+const start = document.querySelector('.start')
+
+audioStart = new Audio('./src/audio/audio_theme.mp3')
+audioGameOver = new Audio('./src/audio/audio_gameover.mp3')
+
+
+const startGame = () => {
+  pipe.classList.add('pipe-animation')
+
+  start.style.display = 'none'
+
+  // audio
+  audioStart.play()
+}
+
 const jump = () => {
   mario.classList.add('jump')
 
@@ -27,6 +42,18 @@ const loop = () => {
       mario.style.width = '75px'
       mario.style.marginLeft = '50px'
 
+      function stopAudioStart() {
+        audioStart.pause()
+      }
+      stopAudioStart()
+
+      audioGameOver.play()
+
+      function stopAudio() {
+        audioGameOver.pause()
+      }
+      setTimeout(stopAudio, 8000)
+
       clearInterval(loop)
     }
   }, 10)
@@ -34,7 +61,12 @@ const loop = () => {
 
 loop()
 
-document.addEventListener('keydown', jump)
+document.addEventListener('keypress', e => {
+  const tecla = e.key
+  if (tecla === 'Enter') {
+    startGame()
+  }
+})
 
 document.addEventListener('keypress', e => {
   const tecla = e.key

@@ -14,21 +14,24 @@
   background: linear-gradient(#87CEEB, #E0F6FF)
 }
 
+.start {
+  background: green;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
 .pipe {
   position: absolute;
   bottom: 0;
+  right: -80px;
   width: 80px;
-  animation: pipe-animation 2s infinite linear;
 }
 
 .mario{
   width: 150px;
   position: absolute;
   bottom: 0;
-}
-
-.jump {
-  animation: jump 500ms ease-out;
 }
 
 .clouds {
@@ -47,6 +50,10 @@
   }
 }
 
+.pipe-animation {
+  animation: pipe-animation 2s infinite linear;
+}
+
 @keyframes pipe-animation {
   from {
     right: -80px;
@@ -55,6 +62,10 @@
   to {
     right: 100%;
   }
+}
+
+.jump {
+  animation: jump 500ms ease-out;
 }
 
 @keyframes jump {
