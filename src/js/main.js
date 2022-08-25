@@ -68,6 +68,13 @@ document.addEventListener('keypress', e => {
   }
 })
 
+document.addEventListener('touchstart', e => {
+  const touch = e.target
+  if (touch.touches.length) {
+    jump() 
+  }
+})
+
 document.addEventListener('keypress', e => {
   const tecla = e.key
   if (tecla === 'Enter') {
