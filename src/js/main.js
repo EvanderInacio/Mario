@@ -21,7 +21,7 @@ const jump = () => {
 
   setTimeout(() => {
     mario.classList.remove('jump')
-  }, 1000)
+  }, 800)
 }
 
 const loop = () => {
@@ -69,8 +69,7 @@ document.addEventListener('keypress', e => {
 })
 
 document.addEventListener('touchstart', e => {
-  const touch = e.target
-  if (touch.touches.length) {
+  if (e.touches.length) {
     jump() 
   }
 })

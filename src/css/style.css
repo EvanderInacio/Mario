@@ -72,7 +72,7 @@ button {
 }
 
 .jump {
-  animation: jump 500ms ease-out;
+  animation: jump 800ms ease-out;
 }
 
 @keyframes jump {
