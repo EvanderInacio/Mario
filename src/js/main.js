@@ -74,10 +74,4 @@ document.addEventListener('keypress', e => {
     startGame()
   }
 })
- 
-document.addEventListener('touchstart', e => {
-  const touchstart = e.touches.length
-  if (touchstart === 0) {
-    startGame()
-  }
-})
+

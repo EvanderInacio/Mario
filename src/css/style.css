@@ -14,12 +14,17 @@
   background: linear-gradient(#87CEEB, #E0F6FF)
 }
 
-.start {
+button {
   background: green;
   color: white;
   font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
   padding: 1rem;
   position: absolute;
+  right: 50vw;
+  top: 50vh;
+  cursor: pointer;
   z-index: 1;
 }
 
