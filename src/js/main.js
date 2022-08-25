@@ -74,10 +74,10 @@ document.addEventListener('keypress', e => {
     startGame()
   }
 })
-
+ 
 document.addEventListener('touchstart', e => {
-  const tecla = e.touches[0]
-  if (tecla === ' ') {
+  const touchstart = e.touches.length
+  if (touchstart === 0) {
     startGame()
   }
 })
