@@ -96,7 +96,7 @@ button:hover {
 }
 
 .jump {
-  animation: jump 1500ms ease-out;
+  animation: jump 800ms ease-out;
 }
 
 @keyframes jump {
