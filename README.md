@@ -4,23 +4,23 @@
 
 <br>
 
-![Resultado final do projeto](https://raw.githubusercontent.com/EvanderInacio/Mario/main/src/img/mario.png)
+![Resultado final do projeto](.github/game.png)
 
 <br>
 
-## 📝 Descrição 
+## 📝 Descrição
 
-Simples jogo do Super Mario. 
+Simples jogo do Super Mario.
 
--  [mario-psi.vercel.app](https://mario-psi.vercel.app/)
+-   [mario-psi.vercel.app](https://mario-psi.vercel.app/)
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
-- JavaScript
+-   HTML
+-   CSS
+-   JavaScript
 
 ## 🔗 Links
 
@@ -58,6 +58,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   </tr>
 </table>
 
------
+---
 
   <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/evander-inacio/">Evander Inácio</a> ☕</h3>
