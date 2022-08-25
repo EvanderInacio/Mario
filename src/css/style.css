@@ -19,6 +19,8 @@
   color: white;
   font-weight: bold;
   padding: 1rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .pipe {

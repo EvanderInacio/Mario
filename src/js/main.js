@@ -63,14 +63,21 @@ loop()
 
 document.addEventListener('keypress', e => {
   const tecla = e.key
-  if (tecla === 'Enter') {
-    startGame()
+  if (tecla === ' ') {
+    jump()
   }
 })
 
 document.addEventListener('keypress', e => {
   const tecla = e.key
+  if (tecla === 'Enter') {
+    startGame()
+  }
+})
+
+document.addEventListener('touchstart', e => {
+  const tecla = e.touches[0]
   if (tecla === ' ') {
-    jump()
+    startGame()
   }
 })
